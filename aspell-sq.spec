@@ -9,6 +9,7 @@ Source0:	http://psychology.rutgers.edu/~zaimi/html/%{name}-%{version}.tgz
 # Source0-md5:	40604173946cf75a2baa3f312ce724af
 URL:		http://psychology.rutgers.edu/~zaimi/software.html
 BuildRequires:	aspell >= 2:0.50
+BuildRequires:	which
 Requires:	aspell >= 2:0.50
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
