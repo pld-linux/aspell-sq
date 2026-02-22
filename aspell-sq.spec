@@ -11,6 +11,7 @@ URL:		http://psychology.rutgers.edu/~zaimi/software.html
 BuildRequires:	aspell >= 2:0.50
 BuildRequires:	which
 Requires:	aspell >= 2:0.50
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Copyright README
-%{_libdir}/aspell/sq.*
+%{_prefix}/lib/aspell/sq.*
 %{_datadir}/aspell/sq.dat
 %{_datadir}/aspell/sq_phonet.dat
